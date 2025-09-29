@@ -24,7 +24,8 @@ void loop() {
   a4 = analogRead(A4);
 
   float mediaSensores = ((a0 + a1 + a2 + a3 + a4) / 5);  // calculo da media para indetificação da tag
+  // unsigned int position = qtr.readLine(sensores); // leitura dos sensores infravermelhos para saber a posicao do carrinho em relação a fita
 
-  unsigned int position = qtr.readLine(sensores); // leitura dos sensores infravermelhos para saber a posicao do carrinho em relação a fita
-  Serial.println(mediaSensores); // a partir do sensor IR, printa posição do carrinho em relação a fita
+  Serial.println(mediaSensores); // para analise numerica da leitura da tag, printa o valor da media
+  // Serial.println(posicao); // para analise, printa a posicao do carrinho
 }
