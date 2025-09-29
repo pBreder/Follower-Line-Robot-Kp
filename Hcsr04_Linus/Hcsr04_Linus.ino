@@ -1,7 +1,7 @@
 #include <PETEletrica.h>
 
-int trig = 4; // pino trig do ultrassonico
-int echo = 8; // pino echo do ultrassonico
+int trig = 3; // pino trig do ultrassonico
+int echo = 2; // pino echo do ultrassonico
 int distancia = 0; // distancia lida pelo ultrassonico
 
 SensorUltrassonico ultrassonico(trig, echo); // declaração do sensor ultrassonico
